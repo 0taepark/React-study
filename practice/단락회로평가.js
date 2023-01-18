@@ -5,13 +5,13 @@ console.log(true || false);
 console.log(!true);
 
 const getName = (person) => {
-  const name = person && person.name;
-  return name || "객체가 아닙니다";
+  const name2 = person && person.name;
+  return name2 || "객체가 아닙니다";
 };
 
 let person;
-const name = getName(person);
-console.log(name);
+const name2 = getName(person);
+console.log(name2);
 
 const getName1 = (person1) => {
   const name1 = person1 && person1.name1;
