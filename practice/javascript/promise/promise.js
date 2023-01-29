@@ -14,15 +14,15 @@ function isPositive(number, resolve, reject) {
   }, 2000);
 }
 
-// isPositive(
-//   10,
-//   (res) => {
-//     console.log("성공적으로 수행됨 : ", res);
-//   },
-//   (err) => {
-//     console.log("실패 하였음 : ", err);
-//   }
-// );
+isPositive(
+  10,
+  (res) => {
+    console.log("성공적으로 수행됨 : ", res);
+  },
+  (err) => {
+    console.log("실패 하였음 : ", err);
+  }
+);
 
 //promise를 활용하여 비동기처리
 function isPositiveP(number) {
@@ -44,7 +44,7 @@ function isPositiveP(number) {
   return asyncTask;
 }
 
-const res = isPositiveP(101);
+const res = isPositiveP(-1);
 res
   .then((res) => {
     console.log("작업 성공 :", res);
