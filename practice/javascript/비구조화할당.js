@@ -7,6 +7,7 @@
 // console.log(one, two, three);
 
 //비구조할당
+// let arr = ["one", "two", "three"];
 // let [one, two, three] = arr;
 // console.log(one, two, three);
 
